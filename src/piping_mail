@@ -1,6 +1,6 @@
 #!/opt/lastlist/apps/python/venv/bin/python
 
-from parseMail import mail_parse
+from parse_mail import mail_parse
 import sys
 import logging
 from logging.handlers import RotatingFileHandler
@@ -13,7 +13,7 @@ logger.addHandler(h)
 
 
 class SendGrid():
-    def __init__(self, hostname='localhost')
+    def __init__(self, hostname='localhost'):
         self.hostname = hostname
 
     def send_mail(self, parsed_mail):
