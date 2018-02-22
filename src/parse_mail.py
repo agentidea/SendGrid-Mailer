@@ -1,4 +1,5 @@
-#!/opt/lastlist/apps/python/venv3/bin/python
+#!/opt/lastlist/apps/python/venv/bin/python
+from __future__ import print_function
 import uuid
 import base64
 from email.header import decode_header
@@ -58,7 +59,7 @@ def fix_subject(result):
 if __name__ == "__main__":
 
     read_data = None
-    path = '/home/developer/newdev/mail.samp'
+    path = '/opt/lastlist/1.0.0/bin/src/SendGrid-Mailer/test/mail.samp'
     with open(path) as f:
         read_data = f.read()
 

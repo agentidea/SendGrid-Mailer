@@ -1,11 +1,11 @@
-#!/opt/lastlist/apps/python/venv3/bin/python3
+#!/opt/lastlist/apps/python/venv/bin/python
 
 from parseMail import mail_parse
 import sys
 import logging
 from logging.handlers import RotatingFileHandler
 
-h = RotatingFileHandler('/home/developer/newdev/logs/mailIn.log',
+h = RotatingFileHandler('/opt/lastlist/1.0.0/bin/src/SendGrid-Mailer/logs/mailIn.log',
                         maxBytes=100000000, backupCount=12)
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.ERROR)
